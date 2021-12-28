@@ -2,15 +2,15 @@ if dracula#should_abort('tex')
     finish
 endif
 
-hi! link texBeginEndName  DraculaOrangeItalic
-hi! link texBoldItalStyle DraculaOrangeBoldItalic
-hi! link texBoldStyle     DraculaOrangeBold
-hi! link texInputFile     DraculaOrangeItalic
-hi! link texItalStyle     DraculaYellowItalic
-hi! link texLigature      DraculaPurple
-hi! link texMath          DraculaPurple
-hi! link texMathMatcher   DraculaPurple
-hi! link texMathSymbol    DraculaPurple
-hi! link texSpecialChar   DraculaPurple
-hi! link texSubscripts    DraculaPurple
-hi! link texTitle         DraculaFgBold
+hi! link texBeginEndName  NightscapeOrangeItalic
+hi! link texBoldItalStyle NightscapeOrangeBoldItalic
+hi! link texBoldStyle     NightscapeOrangeBold
+hi! link texInputFile     NightscapeOrangeItalic
+hi! link texItalStyle     NightscapeYellowItalic
+hi! link texLigature      NightscapePurple
+hi! link texMath          NightscapePurple
+hi! link texMathMatcher   NightscapePurple
+hi! link texMathSymbol    NightscapePurple
+hi! link texSpecialChar   NightscapePurple
+hi! link texSubscripts    NightscapePurple
+hi! link texTitle         NightscapeFgBold

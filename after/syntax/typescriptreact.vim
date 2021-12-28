@@ -4,7 +4,7 @@ endif
 
 runtime! syntax/typescript.vim
 
-hi! link tsxAttrib           DraculaGreenItalic
+hi! link tsxAttrib           NightscapeGreenItalic
 hi! link tsxEqual            Operator
 hi! link tsxIntrinsicTagName Keyword
 hi! link tsxTagName          Type
@@ -15,7 +15,7 @@ hi! link jsxTag             Keyword
 hi! link jsxTagName         Keyword
 hi! link jsxComponentName   Type
 hi! link jsxCloseTag        Type
-hi! link jsxAttrib          DraculaGreenItalic
+hi! link jsxAttrib          NightscapeGreenItalic
 hi! link jsxCloseString     Identifier
 hi! link jsxOpenPunct       Identifier
 

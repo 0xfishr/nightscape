@@ -6,11 +6,11 @@ if ! exists('g:ruby_operators')
     let g:ruby_operators=1
 endif
 
-hi! link rubyBlockArgument          DraculaOrangeItalic
-hi! link rubyBlockParameter         DraculaOrangeItalic
-hi! link rubyCurlyBlock             DraculaPink
-hi! link rubyGlobalVariable         DraculaPurple
-hi! link rubyInstanceVariable       DraculaPurpleItalic
-hi! link rubyInterpolationDelimiter DraculaPink
-hi! link rubyRegexpDelimiter        DraculaRed
-hi! link rubyStringDelimiter        DraculaYellow
+hi! link rubyBlockArgument          NightscapeOrangeItalic
+hi! link rubyBlockParameter         NightscapeOrangeItalic
+hi! link rubyCurlyBlock             NightscapePink
+hi! link rubyGlobalVariable         NightscapePurple
+hi! link rubyInstanceVariable       NightscapePurpleItalic
+hi! link rubyInterpolationDelimiter NightscapePink
+hi! link rubyRegexpDelimiter        NightscapeRed
+hi! link rubyStringDelimiter        NightscapeYellow

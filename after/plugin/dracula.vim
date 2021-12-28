@@ -1,4 +1,4 @@
-if dracula#should_abort()
+if nightscape#should_abort()
   finish
 endif
 
@@ -10,10 +10,10 @@ if exists('g:loaded_fzf') && ! exists('g:fzf_colors')
     \ 'hl':      ['fg', 'Search'],
     \ 'fg+':     ['fg', 'Normal'],
     \ 'bg+':     ['bg', 'Normal'],
-    \ 'hl+':     ['fg', 'DraculaOrange'],
-    \ 'info':    ['fg', 'DraculaPurple'],
+    \ 'hl+':     ['fg', 'NightscapeOrange'],
+    \ 'info':    ['fg', 'NightscapePurple'],
     \ 'border':  ['fg', 'Ignore'],
-    \ 'prompt':  ['fg', 'DraculaGreen'],
+    \ 'prompt':  ['fg', 'NightscapeGreen'],
     \ 'pointer': ['fg', 'Exception'],
     \ 'marker':  ['fg', 'Keyword'],
     \ 'spinner': ['fg', 'Label'],
@@ -23,13 +23,13 @@ endif
 "}}}
 " ALE: {{{
 if exists('g:ale_enabled')
-  hi! link ALEError              DraculaErrorLine
-  hi! link ALEWarning            DraculaWarnLine
-  hi! link ALEInfo               DraculaInfoLine
+  hi! link ALEError              NightscapeErrorLine
+  hi! link ALEWarning            NightscapeWarnLine
+  hi! link ALEInfo               NightscapeInfoLine
 
-  hi! link ALEErrorSign          DraculaRed
-  hi! link ALEWarningSign        DraculaOrange
-  hi! link ALEInfoSign           DraculaCyan
+  hi! link ALEErrorSign          NightscapeRed
+  hi! link ALEWarningSign        NightscapeOrange
+  hi! link ALEInfoSign           NightscapeCyan
 
   hi! link ALEVirtualTextError   Comment
   hi! link ALEVirtualTextWarning Comment
@@ -64,7 +64,7 @@ endif
 " Tree-sitter: {{{
 " The nvim-treesitter library defines many global highlight groups that are
 " linked to the regular vim syntax highlight groups. We only need to redefine
-" those highlight groups when the defaults do not match the dracula
+" those highlight groups when the defaults do not match the nightscape
 " specification.
 " https://github.com/nvim-treesitter/nvim-treesitter/blob/master/plugin/nvim-treesitter.vim
 if exists('g:loaded_nvim_treesitter')
@@ -73,66 +73,66 @@ if exists('g:loaded_nvim_treesitter')
   " # Constants
   hi! link TSConstMacro Macro
   hi! link TSStringEscape Character
-  hi! link TSSymbol DraculaPurple
-  hi! link TSAnnotation DraculaYellow
-  hi! link TSAttribute DraculaGreenItalic
+  hi! link TSSymbol NightscapePurple
+  hi! link TSAnnotation NightscapeYellow
+  hi! link TSAttribute NightscapeGreenItalic
   " # Functions
-  hi! link TSFuncBuiltin DraculaCyan
+  hi! link TSFuncBuiltin NightscapeCyan
   hi! link TSFuncMacro Function
-  hi! link TSParameter DraculaOrangeItalic
-  hi! link TSParameterReference DraculaOrange
-  hi! link TSField DraculaOrange
-  hi! link TSConstructor DraculaCyan
+  hi! link TSParameter NightscapeOrangeItalic
+  hi! link TSParameterReference NightscapeOrange
+  hi! link TSField NightscapeOrange
+  hi! link TSConstructor NightscapeCyan
   " # Keywords
-  hi! link TSLabel DraculaPurpleItalic
+  hi! link TSLabel NightscapePurpleItalic
   " # Variable
-  hi! link TSVariableBuiltin DraculaPurpleItalic
+  hi! link TSVariableBuiltin NightscapePurpleItalic
   " # Text
-  hi! link TSStrong DraculaFgBold
-  hi! link TSEmphasis DraculaFg
+  hi! link TSStrong NightscapeFgBold
+  hi! link TSEmphasis NightscapeFg
   hi! link TSUnderline Underlined
-  hi! link TSTitle DraculaYellow
-  hi! link TSLiteral DraculaYellow
-  hi! link TSURI DraculaYellow
+  hi! link TSTitle NightscapeYellow
+  hi! link TSLiteral NightscapeYellow
+  hi! link TSURI NightscapeYellow
   " HTML and JSX tag attributes. By default, this group is linked to TSProperty,
   " which in turn links to Identifer (white).
-  hi! link TSTagAttribute DraculaGreenItalic
+  hi! link TSTagAttribute NightscapePurpleItalic
 endif
 " }}}
 " nvim-cmp: {{{
 " A completion engine plugin for neovim written in Lua.
 " https://github.com/hrsh7th/nvim-cmp
 if exists('g:loaded_cmp')
-  hi! link CmpItemAbbrDeprecated DraculaError
+  hi! link CmpItemAbbrDeprecated NightscapeError
 
-  hi! link CmpItemAbbrMatch DraculaFg
-  hi! link CmpItemAbbrMatchFuzzy DraculaFg
+  hi! link CmpItemAbbrMatch NightscapeFg
+  hi! link CmpItemAbbrMatchFuzzy NightscapeFg
 
-  hi! link CmpItemKindText DraculaFg
+  hi! link CmpItemKindText NightscapeFg
   hi! link CmpItemKindMethod Function
   hi! link CmpItemKindFunction Function
-  hi! link CmpItemKindConstructor DraculaCyan
-  hi! link CmpItemKindField DraculaOrange
-  hi! link CmpItemKindVariable DraculaPurpleItalic
-  hi! link CmpItemKindClass DraculaCyan
-  hi! link CmpItemKindInterface DraculaCyan
-  hi! link CmpItemKindModule DraculaYellow
-  hi! link CmpItemKindProperty DraculaPink
-  hi! link CmpItemKindUnit DraculaFg
-  hi! link CmpItemKindValue DraculaYellow
-  hi! link CmpItemKindEnum DraculaPink
-  hi! link CmpItemKindKeyword DraculaPink
-  hi! link CmpItemKindSnippet DraculaFg
-  hi! link CmpItemKindColor DraculaYellow
-  hi! link CmpItemKindFile DraculaYellow
-  hi! link CmpItemKindReference DraculaOrange
-  hi! link CmpItemKindFolder DraculaYellow
-  hi! link CmpItemKindEnumMember DraculaPurple
-  hi! link CmpItemKindConstant DraculaPurple
-  hi! link CmpItemKindStruct DraculaPink
-  hi! link CmpItemKindEvent DraculaFg
-  hi! link CmpItemKindOperator DraculaPink
-  hi! link CmpItemKindTypeParameter DraculaCyan
+  hi! link CmpItemKindConstructor NightscapeCyan
+  hi! link CmpItemKindField NightscapeOrange
+  hi! link CmpItemKindVariable NightscapePurpleItalic
+  hi! link CmpItemKindClass NightscapeCyan
+  hi! link CmpItemKindInterface NightscapeCyan
+  hi! link CmpItemKindModule NightscapeYellow
+  hi! link CmpItemKindProperty NightscapePink
+  hi! link CmpItemKindUnit NightscapeFg
+  hi! link CmpItemKindValue NightscapeYellow
+  hi! link CmpItemKindEnum NightscapePink
+  hi! link CmpItemKindKeyword NightscapePink
+  hi! link CmpItemKindSnippet NightscapeFg
+  hi! link CmpItemKindColor NightscapeYellow
+  hi! link CmpItemKindFile NightscapeYellow
+  hi! link CmpItemKindReference NightscapeOrange
+  hi! link CmpItemKindFolder NightscapeYellow
+  hi! link CmpItemKindEnumMember NightscapePurple
+  hi! link CmpItemKindConstant NightscapePurple
+  hi! link CmpItemKindStruct NightscapePink
+  hi! link CmpItemKindEvent NightscapeFg
+  hi! link CmpItemKindOperator NightscapePink
+  hi! link CmpItemKindTypeParameter NightscapeCyan
 endif
 " }}}
 

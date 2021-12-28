@@ -4,14 +4,14 @@ endif
 
 hi! link rstComment                             Comment
 hi! link rstTransition                          Comment
-hi! link rstCodeBlock                           DraculaGreen
-hi! link rstInlineLiteral                       DraculaGreen
-hi! link rstLiteralBlock                        DraculaGreen
-hi! link rstQuotedLiteralBlock                  DraculaGreen
-hi! link rstStandaloneHyperlink                 DraculaLink
-hi! link rstStrongEmphasis                      DraculaOrangeBold
-hi! link rstSections                            DraculaPurpleBold
-hi! link rstEmphasis                            DraculaYellowItalic
+hi! link rstCodeBlock                           NightscapeGreen
+hi! link rstInlineLiteral                       NightscapeGreen
+hi! link rstLiteralBlock                        NightscapeGreen
+hi! link rstQuotedLiteralBlock                  NightscapeGreen
+hi! link rstStandaloneHyperlink                 NightscapeLink
+hi! link rstStrongEmphasis                      NightscapeOrangeBold
+hi! link rstSections                            NightscapePurpleBold
+hi! link rstEmphasis                            NightscapeYellowItalic
 hi! link rstDirective                           Keyword
 hi! link rstSubstitutionDefinition              Keyword
 hi! link rstCitation                            String

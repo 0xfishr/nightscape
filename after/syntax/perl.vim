@@ -3,36 +3,36 @@ if dracula#should_abort('perl')
 endif
 
 " Regex
-hi! link perlMatchStartEnd       DraculaRed
+hi! link perlMatchStartEnd       NightscapeRed
 
 " Builtin functions
-hi! link perlOperator            DraculaCyan
-hi! link perlStatementFiledesc   DraculaCyan
-hi! link perlStatementFiles      DraculaCyan
-hi! link perlStatementFlow       DraculaCyan
-hi! link perlStatementHash       DraculaCyan
-hi! link perlStatementIOfunc     DraculaCyan
-hi! link perlStatementIPC        DraculaCyan
-hi! link perlStatementList       DraculaCyan
-hi! link perlStatementMisc       DraculaCyan
-hi! link perlStatementNetwork    DraculaCyan
-hi! link perlStatementNumeric    DraculaCyan
-hi! link perlStatementProc       DraculaCyan
-hi! link perlStatementPword      DraculaCyan
-hi! link perlStatementRegexp     DraculaCyan
-hi! link perlStatementScalar     DraculaCyan
-hi! link perlStatementSocket     DraculaCyan
-hi! link perlStatementTime       DraculaCyan
-hi! link perlStatementVector     DraculaCyan
+hi! link perlOperator            NightscapeCyan
+hi! link perlStatementFiledesc   NightscapeCyan
+hi! link perlStatementFiles      NightscapeCyan
+hi! link perlStatementFlow       NightscapeCyan
+hi! link perlStatementHash       NightscapeCyan
+hi! link perlStatementIOfunc     NightscapeCyan
+hi! link perlStatementIPC        NightscapeCyan
+hi! link perlStatementList       NightscapeCyan
+hi! link perlStatementMisc       NightscapeCyan
+hi! link perlStatementNetwork    NightscapeCyan
+hi! link perlStatementNumeric    NightscapeCyan
+hi! link perlStatementProc       NightscapeCyan
+hi! link perlStatementPword      NightscapeCyan
+hi! link perlStatementRegexp     NightscapeCyan
+hi! link perlStatementScalar     NightscapeCyan
+hi! link perlStatementSocket     NightscapeCyan
+hi! link perlStatementTime       NightscapeCyan
+hi! link perlStatementVector     NightscapeCyan
 
 " Highlighting for quoting constructs, tied to existing option in vim-perl
 if get(g:, 'perl_string_as_statement', 0)
-  hi! link perlStringStartEnd DraculaRed
+  hi! link perlStringStartEnd NightscapeRed
 endif
 
 " Signatures
-hi! link perlSignature           DraculaOrangeItalic
-hi! link perlSubPrototype        DraculaOrangeItalic
+hi! link perlSignature           NightscapeOrangeItalic
+hi! link perlSubPrototype        NightscapeOrangeItalic
 
 " Hash keys
-hi! link perlVarSimpleMemberName DraculaPurple
+hi! link perlVarSimpleMemberName NightscapePurple
